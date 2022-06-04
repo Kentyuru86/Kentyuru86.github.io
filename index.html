@@ -1,0 +1,375 @@
+<html lang="jp">
+<head>
+    <title>Iwasaki's Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style type="text/css">
+    html{
+        background-color: #aaaaaa;
+    }
+    body{
+        margin-top: 0px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 0px;
+
+        background-color: #fafafa;
+
+        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+    }
+    </style>
+
+    <!-- Table -->
+    <style>
+        table thead{
+            color: #ffffff;
+            background: #000b;
+        }
+        table tbody td{
+            color: #202020;
+            background: #fffb;
+
+            font-size: 100%;
+        }
+        table tbody li{
+            color: #606060;
+            background: #fffb;
+
+            font-size: 80%;
+        }
+    </style>
+    
+    <!-- List -->
+    <style>
+        ul{
+            margin-bottom: 2em;
+        }
+
+        ul.custommarker01{
+            list-style: none;
+            margin-left: 1em;
+        }
+        ul.custommarker01 li:before{
+            content: '-';
+            font-size: small;
+            margin-left: -1em;
+        }
+
+        ul.custommarker02{
+            list-style: none;
+            margin-left: 5em;
+        }
+        ul.custommarker02 li:before{
+            content: '+';
+            font-size: small;
+            margin-left: -5em;
+        }
+    </style>
+</head>
+
+
+
+<!-- Navigation bar -->
+<header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">v20e3001's page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="headerfixed">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Profile">プロフィール</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Experience">経験</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Skill">スキル</a>
+                </li>
+
+                </ul>
+            </div>
+        </div>
+
+        
+
+    </nav>
+
+    
+</header>
+
+<!-- Title -->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h1><br>Portfolio</h1>
+    <p>
+        このページはKTRのポートフォリオサイトです。<br>
+        これまでに手掛けた制作物や身に着けたスキルをまとめています。
+    </p>
+</div>
+
+
+
+
+
+<!-- Main -->
+
+<!-- プロフィール -->
+<div id="Profile" class="container">
+    <h1>プロフィール</h1>
+    <p>
+        <li>職業：学生</li>
+        <li>研究：脳波を利用したVR酔いの早期検知</li>
+    </p>
+
+    <!-- 外部リンク -->
+    <ul class="custommarker01">
+        <li>
+            Github：
+            <ul class="custommarker01">
+                <li>
+                    大学：
+                    <a href="https://github.com/v20e3001">https://github.com/v20e3001</a>
+                </li>
+                <li>
+                    個人活動：
+                    <a href="https://github.com/Kentyuru86">https://github.com/Kentyuru86</a>
+                    
+                </li>
+            </ul>
+            <a href="https://github.com/v20e3001">https://github.com/v20e3001</a>
+        </li>
+        <li>
+            サークル：
+            <ul class="custommarker01">
+                <li>
+                    M-Creator：
+                    <a href="https://m-creator-game.studio.site/">https://m-creator-game.studio.site/</a>
+                </li>
+                <li>
+                    ティクチョコ：
+                    <a href="https://tik-choco.com/">https://tik-choco.com/</a>
+                    
+                </li>
+            </ul>
+        </li>
+    </ul>
+    
+</div>
+
+<!-- 経験 -->
+<div id="Experience" class="container">
+    <h1>経験</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>用語</th>
+                <th>経験年数</th>
+                <th>内容</th>
+            </tr>
+        </thead>
+        <!-- Contents -->
+        <tbody>
+            <tr>
+                <td>ゲームアプリ制作</td>
+                <td>４年</td>
+                <td>
+                    <li>Windows、Android向けアプリケーションの制作</li>
+                    <li>自動車工学の参考書を元に、エンジンや駆動系等の機能を自作した簡易ドライビングシミュレータを制作</li>
+                </td>
+            </tr>
+            <tr>
+                <td>VR</td>
+                <td>２年</td>
+                <td>
+                    <li>HTC VIVE, HTC VIVE Cosmosを用いたVRアプリケーションの制作</li>
+                    <li>大学の研究でVR利用中の被験者の生体情報を調査するシステムの実装で利用</li>
+                </td>
+            </tr>
+            <tr>
+                <td>機械学習</td>
+                <td>１年</td>
+                <td>
+                    <li>「UnityMLAgents」を利用した強化学習のシステムを実装</li>
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+
+<body>
+    <hr>
+</body>
+
+<!-- スキル -->
+<div id="Skill" class="container">
+    <h1>スキル</h1>
+
+    <!-- プログラム言語 -->
+    <h2>プログラム言語</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="1">ツール</th>
+                <th>利用年数</th>
+                <th>利用例</th>
+            </tr>
+        </thead>
+        <!-- Contents -->
+        <tr>
+            <td>C#</td>
+            <td>４年</td>
+            <td>
+                <li> Unity でのアプリ開発やデバッグ用のツールを作成</li>
+            </td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>４年</td>
+            <td>
+                <li> トランプゲームのアルゴリズムや小型ロボットの移動制御を実装</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>２年</td>
+            <td>
+                <li>AndroidStudioを利用してAndroid 向けのアプリケーションの作成</li>
+                <li>Eclipse で 2D グラフィックの描画、アニメーション機能（回転、色シフト等）の実装</li>
+                <li>ImageJ 用いた画像中のノイズ除去を実装</li>
+            </td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>２年</td>
+            <td>
+                <li>フーリエ変換を利用したデータの解析</li>
+                <li>matplotlibを利用したグラフの実装</li>
+                <li>非同期処理を用いた読み込み中のアニメーション表示の実装</li>
+            </td>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>１年</td>
+            <td>
+                <li> DXライブラリやUnrealEngine4における機能の実装</li>
+            </td>
+        </tr>
+        <tr>
+            <td>HSP</td>
+            <td>１年</td>
+            <td>
+                <li>Windows向けのアプリケーションの作成</li>
+                <li>マップチップを使った横スクロール機能を自作</li>
+            </td>
+        </tr>
+        <tr>
+            <td>VBA</td>
+            <td>２か月</td>
+            <td>
+                <li>PowerPoint上での資料作成の作業効率を改善するためのマクロの作成</li>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>１週間</td>
+            <td>
+                <li>本サイトの制作</li>
+                <li>Growi、Crowi等のwikiの編集</li>
+                <li>AWSを使ったログイン、投稿機能の制作</li>
+            </td>
+        </tr>
+    </table>
+
+    <body>
+        <hr>
+    </body>
+
+    <!-- ツール -->
+    <h2>ツール</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">ツール</th>
+                <th>利用年数</th>
+                <th>利用例</th>
+            </tr>
+        </thead>
+        <!-- Contents -->
+        <tr>
+            <td><img src="https://www.notion.so/image/https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1445405114618073091%2FcHLbsANs_400x400.png?table=block&id=bb1e4dfa-38c6-43ab-b12c-4efc5ca301f6&spaceId=9326617c-aff9-4101-8987-c3380c0300c7&width=250&userId=d270fa7c-dd28-4c64-9659-9627f748f768&cache=v2" width="50" height="50"></td>
+            <td>Unity</td>
+            <td>４年</td>
+            <td>
+                <li>Windows、Android向けアプリケーションの制作</li>
+                <li>HTCVIVEを利用したWindows向けVRアプリケーションの制作</li>
+                <li>Androidのジャイロセンサー、GPSを用いたゲームアプリの制作</li>
+                <li>Editor拡張を利用した、Windowsに接続している外部機器や外部ソフトの通信状況をUnity内で確認できるツールの自作</li>
+                <li>URPでのShadergraphを利用したUVスクロールやエフェクトの作成</li>
+                <li>HDRPのレイトレーシングを利用したカーグラフィックの試作</li>
+                <li>自動車工学の参考書を元に、エンジンや駆動系等の機能を自作した簡易ドライビングシミュレータを制作</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://helpx.adobe.com/content/dam/help/en/xd/get-started/jcr_content/main-pars/step_with_text/step-with-text-pars/imageandtext/imageandtextimage/XD.png" width="50" height="50"></td>
+            <td>Adobe XD</td>
+            <td>４年</td>
+            <td>
+                <li>アプリケーションのメニュー画面の試作</li>
+                <li>研究の発表資料で利用するイラストやアイコンの自作</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Photoshop_CC_icon.png/800px-Photoshop_CC_icon.png" width="50" height="50"></td>
+            <td>Adobe Photoshop</td>
+            <td>１年</td>
+            <td>
+                <li>写真からトリミングや色調調整を行ってゲームアプリ内の山や木等の2D背景を作成</li>
+                
+            </td>
+        </tr>
+        <tr>
+            <td><img src="data:image/png;base64,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" width="50" height="50"></td>
+            <td>Github</td>
+            <td>３年</td>
+            <td>
+                <li>Unityのプロジェクトデータの管理に利用</li>
+                <li>ハッカソンやインターンシップにおける、グループ制作でのデータ管理に利用</li>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="data:image/png;base64,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" width="50" height="50"></td>
+            <td>ToroiseSVN</td>
+            <td>６か月</td>
+            <td>
+                <li>所属サークルで制作したアプリケーションやデジタルイラスト等の制作物の管理に利用</li>
+                <li>ハッカソンやインターンシップにおける、グループ制作でのデータ管理に利用</li>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+
+<body>
+    <hr>
+</body>
+
+
+<!-- Footer -->
+<footer>
+    <nav class="navbar navbar-expand-x1 bg-dark navbar-dark bottom justify-content-center">
+        <p>2022 v20e3001</p>
+    </nav>
+</footer>
