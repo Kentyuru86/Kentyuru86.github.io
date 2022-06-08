@@ -9,27 +9,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     
     <style type="text/css">
-    html{
-        background-color: #aaaaaa;
-    }
-    body{
-        margin-top: 0px;
-        margin-right: 25px;
-        margin-left: 25px;
-        margin-bottom: 0px;
-
-        background-color: #fafafa;
-
-        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-
-    }
+        html{
+            background-color: #aaaaaa;
+        }
+        body{
+            margin-top: 0px;
+            margin-right: 25px;
+            margin-left: 25px;
+            margin-bottom: 0px;
+            
+            background-color: #fafafa;
+        
+            font-family: "Helvetica Neue",  Arial, "Hiragino Kaku Gothic     ProN", "Hiragino Sans", Meiryo,     sans-serif;
+        
+        }
     </style>
 
+    <!-- Header -->
     <style>
         header{
             position: relative;
             height: 50vh;
-            
+            margin-top: 50px;
         }
         header{
             background: url(images/TOP.png) center / cover;
@@ -61,7 +62,7 @@
             position:relative;
             padding:0.5em 0.5em 0.5em 0.6em;
             font-size: 100%;
-            
+            border-left: solid 5px #303030aa;
         }
     </style>
 
@@ -75,6 +76,9 @@
             color: #ffffff;
             background: #000b;
             
+        }
+        table tbody tr{
+            border-bottom: solid 5px #303030aa;
         }
         table tbody td{
             color: #202020;
@@ -176,18 +180,16 @@
 </div>
 
 <!-- Title -->
-<div class="jumbotron text-center" style="margin-bottom:0; padding-top: 80px;">
-    <!-- <h1 style="border-left: solid 5px #00000000; background-color: transparent; color: #000000;">Portfolio</h1> -->
+<div class="jumbotron text-center" style="margin-bottom:0; padding-top: 20px; background-color: #f0f0f0;">
     <p>このページはKTRのポートフォリオサイトです。</p>
-    <p>これまでに手がけた制作物や身に着けたスキルについてまとめています。</p>
-    
+    <p>これまでに手がけた制作物や身に着けたスキルについてまとめています。</p>    
 </div>
 
 <!-- Main -->
 
 <!-- プロフィール -->
-<div id="Profile" class="container" style="background-color: #f1e5cf;">
-    <h1>
+<div id="Profile" class="container" style="background-color: #f7f3eb;">
+    <h1 style="background: #44392d;">
         <img src="images/Human.svg" width="40" height="40">
         プロフィール
     </h1>
@@ -249,12 +251,11 @@
             </ul>
         </li>
     </ul>
-    
 </div>
 
 <!-- 経験 -->
-<div id="Experience" class="container"  style="background-color: #d0f0d0;">
-    <h1>
+<div id="Experience" class="container"  style="background-color: #e9f6e9;">
+    <h1 style="background: #315031;">
         <img src="images/Human.svg" width="40" height="40">
         経験
     </h1>
@@ -267,35 +268,49 @@
             </tr>
         </thead>
         <!-- Contents -->
-        <tr>
-            <td>ゲームアプリ制作</td>
-            <td>４年</td>
-            <td>
-                <li>Windows、Android向けアプリケーションの制作</li>
-                <li>自動車工学の参考書を元に、エンジンや駆動系等の機能を自作した簡易ドライビングシミュレータを制作</li>
-            </td>
-        </tr>
-        <tr>
-            <td>VR</td>
-            <td>２年</td>
-            <td>
-                <li>HTC VIVE, HTC VIVE Cosmosを用いたVRアプリケーションの制作</li>
-                <li>大学の研究でVR利用中の被験者の生体情報を調査するシステムの実装で利用</li>
-            </td>
-        </tr>
-        <tr>
-            <td>機械学習</td>
-            <td>１年</td>
-            <td>
-                <li>「UnityMLAgents」を利用した強化学習のシステムを実装</li>
-            </td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>ゲームアプリ制作</td>
+                <td>４年</td>
+                <td>
+                    <li>Windows、Android向けアプリケーションの制作</li>
+                    <li>自動車工学の参考書を元に、エンジンや駆動系等の機能を自作した簡易ドライビングシミュレータを制作</li>
+                </td>
+            </tr>
+            <tr>
+                <td>VR</td>
+                <td>２年</td>
+                <td>
+                    <li>HTC VIVE, HTC VIVE Cosmosを用いたVRアプリケーションの制作</li>
+                    <li>大学の研究でVR利用中の被験者の生体情報を調査するシステムの実装で利用</li>
+                </td>
+            </tr>
+            <tr>
+                <td>機械学習</td>
+                <td>１年</td>
+                <td>
+                    <li>「UnityMLAgents」を利用した強化学習のシステムを実装</li>
+                </td>
+            </tr>
+        </tbody>
     </table>
+
+    <!-- サークル活動 -->
+    <h2>サークル活動</h2>
+    <p>モノづくりサークルに所属</p>
+    <p>UnityやHSPを利用したゲームアプリを制作し、文化祭に出展しました。</p>
+    <p>また、地域の企業や他大学サークルと共同でイベントを開催しました。</p>
+    <!-- 研究活動 -->
+    <h2>研究活動</h2>
+    <img src="images/study.png">
+    <p>VR酔いで引き起こされる体調悪化を未然に防ぐシステムの開発を行っています。</p>
+    <p>VR酔いが、VR映像と現実の感覚の相違からくるストレスで発生することを利用して、VR利用者の動き方とストレスの関係性から体調悪化の予兆を分析しています。</p>
+
 </div>
 
 <!-- スキル -->
-<div id="Skill" class="container" style="background-color: #a0d0f0;" >
-    <h1>
+<div id="Skill" class="container" style="background-color: #c6d6e0;" >
+    <h1 style="background: #144464;">
         <img src="images/Icon_Text.png" width="40" height="40">
         スキル
     </h1>
@@ -316,6 +331,7 @@
             <td align="center">４年</td>
             <td>
                 <li> Unity でのアプリ開発やデバッグ用のツールを作成</li>
+                <li>コントローラの種類に応じたキーマッピング機能を自作</li>
             </td>
         </tr>
         <tr>
