@@ -11,11 +11,12 @@
     <style type="text/css">
         html{
             background-color: #aaaaaa;
+            
         }
         body{
             margin-top: 0px;
-            margin-right: 25px;
-            margin-left: 25px;
+            margin-right: 0px;
+            margin-left: 0px;
             margin-bottom: 0px;
             
             background-color: #fafafa;
@@ -29,11 +30,17 @@
     <style>
         header{
             position: relative;
-            height: 50vh;
+            /* height: 50vh; */
+            
             margin-top: 50px;
+            
         }
         header{
-            background: url(images/TOP.png) center / cover;
+            background: url(images/TOP.png) center / cover no-repeat;
+            /* width: 100vw; */
+            width: 100%;
+            height: 50vw;
+            /* margin-left: -10%; */
         }
     </style>
 
@@ -177,16 +184,19 @@
 </nav>
 
 <!-- TOP -->
-<div id="wrapper">
-    <header class="cover">
-        
-    </header>
-</div>
+<body>
+    <div id="wrapper">
+        <header class="cover">
+            <!-- <h1>Portfolio</h1> -->
+        </header>
+    </div>
+</body>
 
 <!-- Title -->
 <div class="jumbotron text-center" style="margin-bottom:0; padding-top: 20px; background-color: #f0f0f0;">
     <p>このページはKTRのポートフォリオサイトです。</p>
-    <p>これまでに手がけた制作物や身に着けたスキルについてまとめています。</p>    
+    <p>これまでに手がけた制作物や身に着けたスキルについてまとめています。</p>
+    <img src="images/v.png" width="30" height="auto">
 </div>
 
 <!-- Main -->
